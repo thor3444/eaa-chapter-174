@@ -5,7 +5,7 @@ const Contact = () => {
 		<div className="main">
 			<h3>Contact Us</h3>
 
-			<form>
+			<form name="contact" method="POST" data-netlify="true">
 				<div className="form-group">
 					<label htmlFor="exampleFormControlInput1">Name</label>
 					<input

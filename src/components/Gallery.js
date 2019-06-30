@@ -18,7 +18,7 @@ const Gallery = () => {
 			<h3>Gallery</h3>
 
 			<div className="row">
-				{Object.keys(images).map((key, index) => (
+				{Object.keys(images).reverse().map((key, index) => (
 					<div key={index} className="col-12 col-md-6 col-lg-4 my-3">
 						<a href={images[key]}>
 							<img src={images[key]} alt={key} className="img-fluid" />

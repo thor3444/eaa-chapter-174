@@ -10,13 +10,13 @@ const About = () => {
 				<tbody>
 					<tr>
 						<th>President</th>
-						<td>Jim Gibbs</td>
-						<td>(513) 288-1406</td>
+						<td>Dan Oliver</td>
+						<td>(513) 623-7585</td>
 					</tr>
 					<tr>
 						<th>Vice-president</th>
-						<td>Holly Harper</td>
-						<td>(513) 910-3585</td>
+						<td>David Gallagher</td>
+						<td>(513) 877-3249</td>
 					</tr>
 					<tr>
 						<th>Treasurer</th>
@@ -27,6 +27,55 @@ const About = () => {
 						<th>Secretary</th>
 						<td>Bill Miracco</td>
 						<td>(651) 249-1152</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4>2019 Cincinnati Chapter 174 Chairpersons and Volunteers</h4>
+			<h5>Chairs</h5>
+			<table className="table table-borderless table-responsive">
+				<tbody>
+					<tr>
+						<th>Technical Counselor</th>
+						<td>David Gallagher</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>Leo Krebs</td>
+					</tr>
+					<tr>
+						<th>Membership Coordinator</th>
+						<td>Tom Volze</td>
+					</tr>
+					<tr>
+						<th>Newsletter Editor</th>
+						<td>Eric Carnahan</td>
+					</tr>
+					<tr>
+						<th>Web Editor</th>
+						<td>Raymond Kneipp III</td>
+					</tr>
+					<tr>
+						<th>Programs Director</th>
+						<td>Jim Gibbs</td>
+					</tr>
+					<tr>
+						<th>Young Eagles Coordinator</th>
+						<td>Eric Carnahan</td>
+					</tr>
+					<tr>
+						<th>Asst. Young Eagles Coordinator</th>
+						<td>Phil Cady</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h5>Volunteers</h5>
+			<table className="table table-borderless table-responsive">
+				<tbody>
+					<tr>
+						<th>Fly-outs Coordinator</th>
+						<td>Mark Webb</td>
 					</tr>
 				</tbody>
 			</table>

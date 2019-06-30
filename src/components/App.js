@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 import Header from "./Header";
 import Side from "./Side";
@@ -24,7 +24,7 @@ const App = () => {
 						<Route path="/ye" component={YoungEagles} />
 						<Route path="/gallery" component={Gallery} />
 						<Route path="/contact" component={Contact} />
-						<Route path="/*" component={Main} />
+						<Redirect to="/"  />
 					</Switch>
 					<Footer />
 				</div>

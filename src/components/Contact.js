@@ -13,6 +13,7 @@ const Contact = () => {
 						className="form-control"
 						id="exampleFormControlInput1"
 						placeholder="John Smith"
+						required
 					/>
 				</div>
 				<div className="form-group">
@@ -22,11 +23,12 @@ const Contact = () => {
 						className="form-control"
 						id="exampleFormControlInput1"
 						placeholder="johnsmith@example.com"
+						required
 					/>
 				</div>
 				<div className="form-group">
 					<label htmlFor="message">Message</label>
-					<textarea className="form-control" id="message" rows="3" />
+					<textarea className="form-control" id="message" rows="3" required />
 				</div>
 				<button type="submit" className="btn btn-yellow">
 					<i className="fas fa-paper-plane" /> Send

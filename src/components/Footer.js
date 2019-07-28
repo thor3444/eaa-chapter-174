@@ -8,7 +8,7 @@ const Footer = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 					className="btn btn-yellow"
-					href="https://raymondkneipp.netlify.com/"
+					href="https://raymondkneipp.com/"
 				>
 					Web Developer: Raymond Kneipp III
 				</a>

@@ -13,6 +13,7 @@ import newsletter12_18 from "../newsletters/2018/12-18-tailSpinners.pdf";
 import newsletter1_19 from "../newsletters/2019/1-19-tailSpinners.pdf";
 import newsletter2_19 from "../newsletters/2019/2-19-tailSpinners.pdf";
 import newsletter6_19 from "../newsletters/2019/6-19-tailSpinners.pdf";
+import newsletter7_19 from "../newsletters/2019/7-19-tailSpinners.pdf";
 
 const Newsletters = () => {
 	return (
@@ -26,7 +27,7 @@ const Newsletters = () => {
 					data-toggle="collapse"
 					data-target="#collapseOne"
 				>
-					2019 <i className="fas fa-caret-down float-right"></i>
+					2019 <i className="fas fa-caret-down float-right" />
 				</div>
 
 				<div
@@ -34,7 +35,12 @@ const Newsletters = () => {
 					className="collapse show accordion-body"
 					data-parent="#accordion"
 				>
-				<p>
+					<p>
+						<a href={newsletter7_19} target="_blank" rel="noopener noreferrer">
+							July
+						</a>
+					</p>
+					<p>
 						<a href={newsletter6_19} target="_blank" rel="noopener noreferrer">
 							June
 						</a>
@@ -56,7 +62,7 @@ const Newsletters = () => {
 					data-toggle="collapse"
 					data-target="#collapseTwo"
 				>
-					2018 <i className="fas fa-caret-down float-right"></i>
+					2018 <i className="fas fa-caret-down float-right" />
 				</div>
 				<div
 					id="collapseTwo"

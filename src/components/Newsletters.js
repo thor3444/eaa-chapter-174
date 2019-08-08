@@ -47,7 +47,7 @@ const Newsletters = () => {
 					</p>
 					<p>
 						<a href={newsletter2_19} target="_blank" rel="noopener noreferrer">
-							Feburary
+							February
 						</a>
 					</p>
 					<p>

@@ -16,6 +16,7 @@ import newsletter6_19 from "../newsletters/2019/6-19-tailSpinners.pdf";
 import newsletter7_19 from "../newsletters/2019/7-19-tailSpinners.pdf";
 import newsletter8_19 from "../newsletters/2019/8-19-tailSpinners.pdf";
 import sworfi from "../newsletters/2019/SWORFI Flyer 2019.pdf";
+import newsletter9_19 from "../newsletters/2019/9-19-tailSpinners.pdf";
 
 const Newsletters = () => {
 	return (
@@ -37,6 +38,11 @@ const Newsletters = () => {
 					className="collapse show accordion-body"
 					data-parent="#accordion"
 				>
+					<p>
+						<a href={newsletter9_19} target="_blank" rel="noopener noreferrer">
+							September
+						</a>
+					</p>
 					<p>
 						<a href={sworfi} target="_blank" rel="noopener noreferrer">
 							SWORFI

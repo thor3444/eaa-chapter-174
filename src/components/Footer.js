@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/rk.svg";
 
 const Footer = () => {
 	return (
@@ -7,10 +8,11 @@ const Footer = () => {
 				<a
 					target="_blank"
 					rel="noopener noreferrer"
-					className="btn btn-yellow"
+					className="btn btn-yellow rk-link"
 					href="https://raymondkneipp.com/"
 				>
-					Web Developer: Raymond Kneipp III
+					<img src={logo} alt="RK" className="rk" />
+					Web Design
 				</a>
 			</p>
 			<a

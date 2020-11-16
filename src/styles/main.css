@@ -20,11 +20,29 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "header header header header" "logo title title title" "logo nav nav nav" "side main main main" "footer footer footer footer";
+      grid-template-areas: "alert alert alert alert" "header header header header" "logo title title title" "logo nav nav nav" "side main main main" "footer footer footer footer";
+}
+
+.grid .alert-custom {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: alert;
+  background-color: #c53030;
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+}
+
+.grid .alert-custom h6 {
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  text-align: center;
 }
 
 .grid .header {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: header;
@@ -40,7 +58,7 @@
 }
 
 .grid .logo {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: logo;
@@ -58,7 +76,7 @@
 }
 
 .grid .title {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: title;
@@ -75,7 +93,7 @@
 }
 
 .grid .nav {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: nav;
@@ -116,7 +134,7 @@
 }
 
 .grid .side {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: side;
   background-color: #d3d3d3;
@@ -124,7 +142,7 @@
 }
 
 .grid .main {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: main;
@@ -141,7 +159,7 @@
 }
 
 .grid .footer {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: footer;
@@ -151,7 +169,7 @@
 
 @media (max-width: 991.98px) {
   .grid {
-        grid-template-areas: "header header header header" "logo title title title" "nav nav nav nav" "side main main main" "footer footer footer footer";
+        grid-template-areas: "alert alert alert alert" "header header header header" "logo title title title" "nav nav nav nav" "side main main main" "footer footer footer footer";
   }
   .header {
     height: 250px !important;
@@ -160,7 +178,7 @@
 
 @media (max-width: 767.98px) {
   .grid {
-        grid-template-areas: "logo logo logo logo" "header header header header" "title title title title" "nav nav nav nav" "main main main main" "side side side side" "footer footer footer footer";
+        grid-template-areas: "alert alert alert alert" "logo logo logo logo" "header header header header" "title title title title" "nav nav nav nav" "main main main main" "side side side side" "footer footer footer footer";
   }
   .header {
     height: 200px !important;

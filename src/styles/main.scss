@@ -26,11 +26,27 @@ $font: "Montserrat";
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas:
+		"alert alert alert alert"
 		"header header header header"
 		"logo title title title"
 		"logo nav nav nav"
 		"side main main main"
 		"footer footer footer footer";
+
+	.alert-custom {
+		grid-area: alert;
+		background-color: #c53030;
+		margin-bottom: 0;
+		border-radius: 0;
+		padding: 1rem 1.5rem;
+
+		h6 {
+			margin: 0;
+			color: white;
+			font-weight: 700;
+			text-align: center;
+		}
+	}
 
 	.header {
 		grid-area: header;
@@ -124,6 +140,7 @@ $font: "Montserrat";
 @media (max-width: 991.98px) {
 	.grid {
 		grid-template-areas:
+			"alert alert alert alert"
 			"header header header header"
 			"logo title title title"
 			"nav nav nav nav"
@@ -139,6 +156,7 @@ $font: "Montserrat";
 @media (max-width: 767.98px) {
 	.grid {
 		grid-template-areas:
+			"alert alert alert alert"
 			"logo logo logo logo"
 			"header header header header"
 			"title title title title"

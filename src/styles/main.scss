@@ -7,247 +7,256 @@ $grey: #d3d3d3;
 $font: "Montserrat";
 
 * {
-	font-family: $font;
+  font-family: $font;
 }
 
 .bg-yellow {
-	background-color: $yellow;
+  background-color: $yellow;
 }
 
 .btn-yellow {
-	background-color: $yellow;
+  background-color: $yellow;
 
-	&:hover {
-		background-color: $yellow-dark;
-	}
+  &:hover {
+    background-color: $yellow-dark;
+  }
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-areas:
-		"alert alert alert alert"
-		"header header header header"
-		"logo title title title"
-		"logo nav nav nav"
-		"side main main main"
-		"footer footer footer footer";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "alert alert alert alert"
+    "header header header header"
+    "logo title title title"
+    "logo nav nav nav"
+    "side main main main"
+    "footer footer footer footer";
 
-	.alert-custom {
-		grid-area: alert;
-		background-color: #c53030;
-		margin-bottom: 0;
-		border-radius: 0;
-		padding: 1rem 1.5rem;
+  .alert-custom {
+    grid-area: alert;
+    background-color: #c53030;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 1rem 1.5rem;
 
-		h6 {
-			margin: 0;
-			color: white;
-			font-weight: 700;
-			text-align: center;
-		}
-	}
+    h6 {
+      margin: 0;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
 
-	.header {
-		grid-area: header;
-		background-color: $yellow;
-		height: 300px;
-		background-image: url("../images/banner.jpg");
-		background-size: cover;
-		background-position: center;
+  .header {
+    grid-area: header;
+    background-color: $yellow;
+    height: 300px;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
 
-		img {
-			width: 100%;
-		}
-	}
+    img {
+      width: 100%;
+    }
+  }
 
-	.logo {
-		grid-area: logo;
-		background-color: $yellow;
-		padding: 30px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+  .logo {
+    grid-area: logo;
+    background-color: $yellow;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-	.title {
-		grid-area: title;
-		background-color: $yellow;
-		padding: 30px;
+  .title {
+    grid-area: title;
+    background-color: $yellow;
+    padding: 30px;
 
-		h1 {
-			font-weight: 700;
-		}
+    h1 {
+      font-weight: 700;
+    }
 
-		h3 {
-			margin-bottom: 0;
-		}
-	}
+    h3 {
+      margin-bottom: 0;
+    }
+  }
 
-	.nav {
-		grid-area: nav;
-		display: flex;
-		flex-direction: row;
-		background-color: $yellow;
-		justify-content: space-evenly;
-		align-items: center;
+  .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    background-color: $yellow;
+    justify-content: space-evenly;
+    align-items: center;
 
-		a {
-			text-decoration: none;
-			color: #000;
-			padding: 20px 15px;
-			transition: background-color 0.2s;
-			flex-grow: 1;
-			text-align: center;
+    a {
+      text-decoration: none;
+      color: #000;
+      padding: 20px 15px;
+      transition: background-color 0.2s;
+      flex-grow: 1;
+      text-align: center;
 
-			&:hover {
-				background-color: $yellow-dark;
-			}
+      &:hover {
+        background-color: $yellow-dark;
+      }
 
-			&.active {
-				font-weight: 700;
-			}
-		}
-	}
+      &.active {
+        font-weight: 700;
+      }
+    }
+  }
 
-	.side {
-		grid-area: side;
-		background-color: $grey;
-		padding: 30px;
-	}
+  .side {
+    grid-area: side;
+    background-color: $grey;
+    padding: 30px;
+  }
 
-	.main {
-		grid-area: main;
-		background-color: #fff;
-		padding: 40px;
+  .main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 40px;
 
-		h3 {
-			margin-bottom: 25px;
-		}
+    h3 {
+      margin-bottom: 25px;
+    }
 
-		p {
-			text-align: justify;
-		}
-	}
+    p {
+      text-align: justify;
+    }
+  }
 
-	.footer {
-		grid-area: footer;
-		background-color: $yellow;
-		padding: 30px;
-	}
+  .footer {
+    grid-area: footer;
+    background-color: $yellow;
+    padding: 30px;
+  }
 }
 
 @media (max-width: 991.98px) {
-	.grid {
-		grid-template-areas:
-			"alert alert alert alert"
-			"header header header header"
-			"logo title title title"
-			"nav nav nav nav"
-			"side main main main"
-			"footer footer footer footer";
-	}
+  .grid {
+    grid-template-areas:
+      "alert alert alert alert"
+      "header header header header"
+      "logo title title title"
+      "nav nav nav nav"
+      "side main main main"
+      "footer footer footer footer";
+  }
 
-	.header {
-		height: 250px !important;
-	}
+  .header {
+    height: 250px !important;
+  }
 }
 
 @media (max-width: 767.98px) {
-	.grid {
-		grid-template-areas:
-			"alert alert alert alert"
-			"logo logo logo logo"
-			"header header header header"
-			"title title title title"
-			"nav nav nav nav"
-			"main main main main"
-			"side side side side"
-			"footer footer footer footer";
-	}
+  .grid {
+    grid-template-areas:
+      "alert alert alert alert"
+      "logo logo logo logo"
+      "header header header header"
+      "title title title title"
+      "nav nav nav nav"
+      "main main main main"
+      "side side side side"
+      "footer footer footer footer";
+  }
 
-	.header {
-		height: 200px !important;
-	}
+  .header {
+    height: 200px !important;
+  }
 
-	.title {
-		text-align: center;
-	}
+  .title {
+    text-align: center;
+  }
 
-	.nav {
-		justify-content: center !important;
+  .nav {
+    justify-content: center !important;
 
-		a {
-			padding: 16px 8px !important;
-		}
-	}
+    a {
+      padding: 16px 8px !important;
+    }
+  }
 
-	.container {
-		padding: 0;
-	}
+  .container {
+    padding: 0;
+  }
 }
 
 @media (max-width: 575.98px) {
-	.header {
-		height: 150px !important;
-	}
+  .header {
+    height: 150px !important;
+  }
 
-	.nav {
-		flex-direction: column !important;
+  .nav {
+    flex-direction: column !important;
 
-		a {
-			width: 100%;
-		}
-	}
+    a {
+      width: 100%;
+    }
+  }
 }
 
 .calendar {
-	border: 1px solid darken($grey, 10);
-	text-align: center;
-	margin: 10px 0 20px;
+  border: 1px solid darken($grey, 10);
+  text-align: center;
+  margin: 10px 0 20px;
 
-	h6 {
-		font-weight: 700;
-		margin: 10px;
-	}
+  h6 {
+    font-weight: 700;
+    margin: 10px;
+  }
 
-	.month {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		border-top: 1px solid darken($grey, 10);
-	}
+  .month {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-top: 1px solid darken($grey, 10);
+  }
 
-	.day,
-	.day-label {
-		padding: 4px;
-	}
+  .day,
+  .day-label {
+    padding: 4px;
+  }
 
-	.day-label {
-		font-weight: 700;
-	}
+  .day-label {
+    font-weight: 700;
+  }
 }
 
 .accordion-header {
-	font-weight: 700;
-	cursor: pointer;
-	margin-top: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .accordion-body {
-	border-top: 1px solid darken($grey, 10);
-	border-bottom: 1px solid darken($grey, 10);
+  border-top: 1px solid darken($grey, 10);
+  border-bottom: 1px solid darken($grey, 10);
 
-	p {
-		margin: 10px 0 10px;
-		padding: 0;
+  p {
+    margin: 10px 0 10px;
+    padding: 0;
 
-		a {
-			color: #000;
-		}
-	}
+    a {
+      color: #000;
+    }
+  }
 }
 
 .rk {
-	height: 35px;
-	margin-right: 5px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.creator {
+  color: black;
+
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
 }

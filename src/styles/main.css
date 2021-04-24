@@ -266,4 +266,13 @@
   height: 35px;
   margin-right: 5px;
 }
+
+.creator {
+  color: black;
+}
+
+.creator:hover {
+  color: black;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=main.css.map */
